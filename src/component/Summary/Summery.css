@@ -1,0 +1,9 @@
+.summary{
+    padding: 1rem;
+    height: 60vh;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 0.5rem;
+    position: sticky;
+    top: 5rem;
+}

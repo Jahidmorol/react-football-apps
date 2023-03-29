@@ -1,0 +1,30 @@
+
+.team-cart{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+.team-cart img{
+    width: 250px;
+}
+.team-img{
+    display: block;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.team-logo{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.cart-btn{
+    position: absolute;
+    bottom: 0.5rem;
+    width: 88%;
+    background-color: bisque;
+}
+.cart-btn:hover{
+    background-color: orange;
+}
