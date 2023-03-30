@@ -1,4 +1,5 @@
 import React from 'react';
+import CartDetails from '../CartDetails/CartDetails';
 import './Summery.css'
 
 const Summary = ({cart}) => {
@@ -16,13 +17,19 @@ const Summary = ({cart}) => {
         // <img src=${nTeam.strTeamBanner} alt="photo" />
         // `;
     }
-    
+    const deleteSummary = () =>{
+        localStorage.removeItem('summary-cart')
+    }
     return (
         <div className='summary'>
             <h2>Football Summary</h2>
             <h4>Total Add: {quantity}</h4>
-            <img src={nTeam.strTeamBanner} alt="" />
-            {/* .reduce((p,t)=> t?.quantity || 0 + p, 0) */}
+            <div className='cart-details'>
+                {
+                    cart.map(singleCart => <CartDetails cartDetails={singleCart}></CartDetails>)
+                }
+            </div>
+            <button onClick={deleteSummary}>Delete</button>
         </div>
     );
 };
