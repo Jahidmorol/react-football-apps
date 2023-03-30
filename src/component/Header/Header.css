@@ -3,16 +3,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    background-color: bisque;
+    background-color: darkgrey;
 }
-.header-container h1 {
+.header-container h1{
     font-size: 2.5em;
-    color: coral;
+    color: white;
+}
+.header-container h1 span{
+    color: orangered;
 }
 
 .header-info a {
     margin: 0 1rem;
+    color: white;
 }
 .header-info a:hover{
-    color: chocolate;
+    color: orangered;
 }

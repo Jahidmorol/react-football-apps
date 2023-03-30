@@ -4,6 +4,7 @@ import './App.css'
 import Header from './component/Header/Header'
 import Summary from './component/Summary/Summary'
 import Team from './component/Team/Team'
+import { addToDb } from './utilities/fakeDb'
 
 function App() {
   const [teams, setTeams] = useState([])
@@ -18,6 +19,7 @@ const handleAddTeam = (team) => {
   const newCart = [...cart, team]
   // console.log([...cart, team]);
   setCart(newCart)
+  addToDb(team.idTeam)
   // console.log('clicked',team);
 }
   return (
